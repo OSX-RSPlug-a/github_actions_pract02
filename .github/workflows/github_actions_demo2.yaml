@@ -1,6 +1,6 @@
 name: Continuos Integration
-
-on: pull_request
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push, pull_request]
 
 jobs:
   continuos-integration:
