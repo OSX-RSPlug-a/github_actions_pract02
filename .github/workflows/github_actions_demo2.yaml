@@ -1,5 +1,7 @@
 name: Continuos Integration
+
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
 on: [push, pull_request]
 
 jobs:
@@ -8,10 +10,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      
       - name: Using Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 16.
+          
       - name: run install, build and test
         run: |
           npm install
